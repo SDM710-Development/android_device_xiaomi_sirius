@@ -16,7 +16,7 @@ TARGET_OTA_ASSERT_DEVICE := sirius
 TARGET_KERNEL_CONFIG := sirius_defconfig
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
@@ -29,6 +29,3 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/sirius/BoardConfigVendor.mk
-
-# Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private

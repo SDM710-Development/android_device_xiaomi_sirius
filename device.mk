@@ -35,14 +35,6 @@ $(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 PRODUCT_PACKAGES += \
     fstab.qcom
 
-# Device init scripts
-PRODUCT_PACKAGES += \
-    init.target.rc
-
-# HIDL
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:system/etc/manifest.xml
-
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
