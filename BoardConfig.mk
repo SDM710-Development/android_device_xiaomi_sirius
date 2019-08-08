@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/sirius
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sirius
 
+# Display
+TARGET_HAS_WIDE_COLOR_DISPLAY := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := sirius_defconfig
 
