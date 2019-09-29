@@ -2,6 +2,10 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.soundfx.type=mi
 
+# Display
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.has_wide_color_display=true
+
 # Display density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
