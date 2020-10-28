@@ -1,0 +1,5 @@
+# Display
+ro.surface_flinger.has_wide_color_display=true
+
+# Display density
+ro.sf.lcd_density=440
