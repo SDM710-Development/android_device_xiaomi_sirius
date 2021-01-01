@@ -14,6 +14,9 @@ DEVICE_PATH := device/xiaomi/sirius
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sirius
 
+# Display
+TARGET_SCREEN_DENSITY := 411
+
 # Kernel
 TARGET_KERNEL_CONFIG := sirius_defconfig
 
