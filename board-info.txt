@@ -1,3 +1,0 @@
-require version-modem=2019-04-17 23:09:33
-require version-vendor=1555516319,28
-require version-miui=V10.3.1.0
