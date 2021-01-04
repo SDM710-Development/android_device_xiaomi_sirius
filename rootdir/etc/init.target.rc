@@ -28,70 +28,12 @@
 #
 
 on init
-    write /sys/class/leds/white/max_brightness 20
-
-on fs
-    wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    mount_all /vendor/etc/fstab.qcom
-    chown root system /mnt/vendor/persist
-    chmod 0771 /mnt/vendor/persist
-    restorecon_recursive /mnt/vendor/persist
-    mkdir /mnt/vendor/persist/data 0700 system system
-    mkdir /persist/wlan_bt 0700 system system
-    mkdir /dev/logfs 0771 system system
-    mkdir /mnt/vendor/persist/stability 0755 system system
-    mkdir /mnt/vendor/persist/misys 0755 system system
-    #+ add for watermark
-    mkdir /mnt/vendor/persist/camera 0777 root root
-    chown system system /dev/tiload_node
-    chmod 660 /dev/tiload_node
-    mount vfat /dev/block/bootdevice/by-name/logfs /dev/logfs noatime umask=006,uid=1000,gid=1000
-    chmod 644 /persist/audio/us_manual_cal
-
-    chown system system /proc/tp_selftest
-    chmod 0644 /proc/tp_selftest
-
-on post-fs
-    write /dev/ipa 1
-
-on post-fs-data
-    mkdir /data/tombstones 0771 system system
-    mkdir /tombstones/modem 0771 system system
-    mkdir /tombstones/lpass 0771 system system
-    mkdir /tombstones/wcnss 0771 system system
-    mkdir /tombstones/dsps 0771 system system
-    mkdir /data/vendor/hbtp 0750 system system
-    mkdir /data/vendor/nnhal 0700 system system
-    mkdir /data/vendor/thermal 0771 root system
-    mkdir /data/vendor/thermal/config 0771 root system
-
-    chmod 0644 /dev/elliptic0
-    chmod 0644 /dev/elliptic1
-    mkdir /data/vendor/misc/display 0771 system system
-    chmod 666 /sys/class/drm/card0-DSI-1/disp_count
+    write /sys/class/leds/white/max_brightness 63
 
 on boot
-    chown system system /sys/kernel/hbtp/display_pwr
-    chown system system /sys/class/leds/white/brightness
-    chown system system /sys/class/leds/white/blink
-    chown system system /sys/class/drm/card0-DSI-1/disp_param
-    start rmt_storage
-
-# DBMDX character device
     chmod 0660 /dev/lirc0
     chown system system /dev/lirc0
-    chown media media /dev/dbmdx-1
-    chmod 0770 /dev/dbmdx-1
-    chown system system /sys/class/thermal/thermal_message/sconfig
-    chown system system /sys/class/backlight/panel0-backlight/brightness_clone
-
-#USB controller configuration
-    setprop vendor.usb.rndis.func.name "gsi"
-    setprop vendor.usb.rmnet.func.name "gsi"
-    setprop vendor.usb.rmnet.inst.name "rmnet"
-    setprop vendor.usb.dpl.inst.name "dpl"
-    setprop vendor.usb.qdss.inst.name "qdss"
+    chown system system /sys/kernel/hbtp/display_pwr
 
 service adsprpcd /vendor/bin/adsprpcd rootpd
    class main
@@ -112,8 +54,3 @@ service cdsprpcd /vendor/bin/cdsprpcd
    class main
    user system
    group system
-
-on property:adsp.restart=1
-    write /sys/module/subsystem_restart/parameters/enable_ramdumps 1
-    write /sys/bus/msm_subsys/devices/subsys3/restart_level related
-    write /sys/kernel/debug/msm_subsys/adsp restart
