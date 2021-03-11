@@ -178,10 +178,6 @@ vendor/lib64/libnanopb.so
 vendor/firmware/bu64748gwz.prog
 vendor/firmware/CAMERA_ICP.elf
 
-# Consumerir
-vendor/lib/hw/consumerir.default.so
-vendor/lib64/hw/consumerir.default.so
-
 # Display configs
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
