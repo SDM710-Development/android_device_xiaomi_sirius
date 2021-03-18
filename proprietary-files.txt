@@ -178,6 +178,23 @@ vendor/lib64/libnanopb.so
 vendor/firmware/bu64748gwz.prog
 vendor/firmware/CAMERA_ICP.elf
 
+# DRM (MTD)
+vendor/bin/mtd@1.2
+vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc
+vendor/lib64/libmfido.so
+vendor/lib64/libmt@1.2.so
+vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
+
+# DRM (Widevine)
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/libwvhidl.so
+vendor/lib64/mediadrm/libwvdrmengine.so
+
 # Display configs
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
