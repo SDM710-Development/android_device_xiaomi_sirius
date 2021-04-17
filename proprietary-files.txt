@@ -58,14 +58,6 @@ vendor/firmware/tas2557_uCDSP_goer.bin
 vendor/etc/tas2557_aac.ftcfg
 vendor/etc/tas2557_goer.ftcfg
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/libbtnv.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/libbtnv.so
-
 # Camera
 vendor/etc/camera/age_gender_bg
 vendor/etc/camera/camxoverridesettings.txt
@@ -204,10 +196,6 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 # Display configs
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
-
-# FM
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sdm710.so
