@@ -1,5 +1,4 @@
 # Audio
-ro.vendor.audio.soundfx.type=dirac
 vendor.audio.feature.compr_voip.enable=true
 vendor.audio.voice.receiver.status=off
 vendor.voice.path.for.pcm.voip=true
