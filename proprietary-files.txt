@@ -1,3 +1,5 @@
+# Blobs are from sirius-user 10 QKQ1.190828.002 V12.5.1.0.QEBCNXM release-keys
+
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
