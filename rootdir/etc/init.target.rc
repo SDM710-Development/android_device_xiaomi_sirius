@@ -49,8 +49,3 @@ service adsprpcd_sensorspd /vendor/bin/adsprpcd sensorspd
    class core
    user system
    group system
-
-service cdsprpcd /vendor/bin/cdsprpcd
-   class main
-   user system
-   group system
