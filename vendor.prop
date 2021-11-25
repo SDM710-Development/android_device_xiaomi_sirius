@@ -1,16 +1,4 @@
 # Audio
-ro.vendor.audio.soundfx.type=mi
-
-# Display
-ro.surface_flinger.has_wide_color_display=true
-
-# Display postprocessing
-vendor.display.enable_default_color_mode=1
-
-# GNSS
-ro.hardware.flp=brcm
-ro.hardware.gps=brcm
-
-# NFC
-ro.hardware.nfc_nci=nqx.default
-ro.se.type=eSE,HCE,UICC
+vendor.audio.feature.compr_voip.enable=true
+vendor.audio.voice.receiver.status=off
+vendor.voice.path.for.pcm.voip=true
