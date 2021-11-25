@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_dipper.mk
+    $(LOCAL_DIR)/lineage_sirius.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_dipper-user \
-    lineage_dipper-userdebug \
-    lineage_dipper-eng
+    lineage_sirius-user \
+    lineage_sirius-userdebug \
+    lineage_sirius-eng

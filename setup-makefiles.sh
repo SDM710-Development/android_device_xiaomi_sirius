@@ -8,8 +8,8 @@
 
 set -e
 
-export DEVICE=dipper
-export DEVICE_COMMON=sdm845-common
+export DEVICE=sirius
+export DEVICE_COMMON=sdm710-common
 export VENDOR=xiaomi
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
