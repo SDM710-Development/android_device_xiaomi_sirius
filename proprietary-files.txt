@@ -49,7 +49,7 @@ vendor/etc/tas2557_goer.ftcfg
 
 # Camera
 vendor/lib/hw/camera.qcom.so
-vendor/lib/hw/com.qti.chi.override.so
+vendor/lib/hw/com.qti.chi.override.so|7629615e835fc03afc86f88a266414bc2db82231
 vendor/lib/libFaceGrade.so
 vendor/lib/libSNPE.so
 vendor/lib/libXMFD_AgeGender.so
