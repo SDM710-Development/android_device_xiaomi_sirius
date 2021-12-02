@@ -76,4 +76,4 @@ PRODUCT_PACKAGES += \
     XiaomiPocketMode
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/sirius/sirius-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sirius/sirius-vendor.mk)
