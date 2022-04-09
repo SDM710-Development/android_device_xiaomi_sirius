@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2021 The LineageOS Project
+# Copyright (C) 2018-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,6 +11,7 @@ $(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 PRODUCT_SHIPPING_API_LEVEL := 27
+PRODUCT_COMPRESSED_APEX := false
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2244
